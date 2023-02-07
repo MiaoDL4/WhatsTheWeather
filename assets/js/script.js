@@ -26,6 +26,7 @@ function getWeatherData(userInput) { //call api data
                     console.log(allWeatherData[i].dt_txt);
                     let weatherDayDisplay = document.createElement('div');
                     weatherDayDisplay.classList.add('col')
+                    weatherDayDisplay.classList.add('board')
                     weatherDayDisplay.innerHTML = `
                         <div>${day}</div>
                         <div>${date}</div>
@@ -64,6 +65,8 @@ function displayCities() { //displays local storage data
         let city = document.createElement('div');
         city.setAttribute("onclick", "searchSaveCity(event)");
         city.setAttribute("id", `${cityHistoryList[i]}`)
+        city.classList.add("btn")
+        city.classList.add("buttonBoard")
         city.innerHTML = `${cityHistoryList[i]}`;
         cityDislayArea.appendChild(city);
     }

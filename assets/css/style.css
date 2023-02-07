@@ -1,0 +1,28 @@
+
+header{
+    background: rgb(89,139,194);
+    background: linear-gradient(90deg, rgba(89,139,194,1) 15%, rgba(255,255,255,1) 82%);
+
+}
+
+.board{
+    border-radius: 5px;
+    border-style: solid;
+    margin: 5px;
+}
+
+.buttonBoard{
+    margin: 5px 0 5px 0;
+    color: white;
+    background-color: #0d6efd;
+}
+
+.line {
+    height: 1px;
+    background: black;
+  }
+
+#margin{
+    margin-right: 0;
+    margin-left: 0;
+}
